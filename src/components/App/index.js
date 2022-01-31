@@ -1,20 +1,21 @@
 import "./App.css";
-import Articles from "../Articles";
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import Main from "../Main";
+import Log from "../Log";
 import Header from "../Header";
-import LoginButton from "../Login";
-import LogoutButton from "../Logout";
-import Profile from "../Profile";
 
 function App() {
   return (
     <div className="App">
-      <LoginButton />
-      <LogoutButton />
-      <Profile />
       <Header htext="WikiPigeon" />
-      <article className="post">
-        <Articles />
-      </article>
+      <Routes>
+        <Route path="/" element={<Log />} />
+        <Route path="/article" element={<Main />} />
+      </Routes>
+      <nav className="nav-bar">
+        <Link to="/article">Read Articles...</Link>
+      </nav>
     </div>
   );
 }
