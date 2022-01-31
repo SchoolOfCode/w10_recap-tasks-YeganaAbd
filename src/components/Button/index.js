@@ -3,9 +3,11 @@ import { Button } from "antd";
 
 function Btn({ text }) {
   return (
-    <Button type="primary" className={styles.likeButton}>
-      {text}
-    </Button>
+    <div>
+      <Button type="primary" className={styles.likeButton}>
+        {text}
+      </Button>
+    </div>
   );
 }
 export default Btn;
