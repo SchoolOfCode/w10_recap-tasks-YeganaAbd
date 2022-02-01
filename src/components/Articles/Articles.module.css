@@ -1,0 +1,9 @@
+.commentSection {
+  margin: 1rem;
+}
+
+.commentSection h3 {
+  background-color: rgb(231, 214, 214);
+  padding: 1rem;
+  font-size: 32px;
+}
