@@ -3,5 +3,10 @@
 }
 
 button {
-  margin: 10px;
+  position: relative;
+  padding: 1rem;
+  max-width: 640px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  display: inline-flex;
 }

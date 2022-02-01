@@ -1,5 +1,13 @@
 .header {
-  background-color: birgb(24, 51, 22);
-  width: 100%;
   text-align: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: url("http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  margin-bottom: 5rem;
 }
