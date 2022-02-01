@@ -1,5 +1,6 @@
 import articles from "../../libs/articles";
 import Btn from "../Button";
+import Comment from "../Comment";
 
 function Articles() {
   return (
@@ -11,12 +12,7 @@ function Articles() {
             <p>{item.paragraphs}</p>
             <Btn text="Like 👍" />
             {item.comments.map((comment) => {
-              return (
-                <div className="comment">
-                  <h4>{comment.name} says:</h4>
-                  <p>{comment.text}</p>
-                </div>
-              );
+              return <Comment comment={comment} />;
             })}
           </section>
         );
